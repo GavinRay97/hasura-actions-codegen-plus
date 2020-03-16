@@ -1,13 +1,14 @@
 actions:
-- name: addNumbers
-  definition:
-    kind: synchronous
-    handler: http://localhost:3000/api/add
-  permissions: []
+  - name: InsertUserAction
+    definition:
+      kind: synchronous
+      handler: http://localhost:3000/insert-user
 custom_types:
   enums: []
-  input_objects: []
+  input_objects:
+    - name: UserInfo
   objects:
-  - name: AddResult
-    relationships: []
+    - name: DerivedInsertUserOutput
+    - name: DerivedUserInsertOutput
+    - name: TokenOutput
   scalars: []

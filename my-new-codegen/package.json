@@ -1,0 +1,22 @@
+{
+  "name": "scratchpad",
+  "version": "1.0.2",
+  "main": "dist/app.js",
+  "ts:main": "src/index.ts",
+  "typings": "src/index.ts",
+  "license": "MIT",
+  "scripts": {
+    "build": "node ./fuse.js"
+  },
+  "dependencies": {
+    "graphql": "^14.6.0",
+    "graphql-extra": "^0.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^13.9.0",
+    "fuse-box": "^3.7.1",
+    "terser": "^4.6.6",
+    "typescript": "^3.8.3",
+    "uglify-js": "^3.8.0"
+  }
+}

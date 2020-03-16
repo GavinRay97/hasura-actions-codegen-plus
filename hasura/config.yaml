@@ -4,7 +4,7 @@ actions:
   codegen:
     framework: custom-name
     output_dir: ../codegen-output/
-    uri: ../my-new-codegen/actions-codegen.js
+    uri: ../my-new-codegen/dist/actions-codegen.js
 endpoint: http://localhost:8080
 metadata_directory: metadata
-version: "2"
+version: '2'

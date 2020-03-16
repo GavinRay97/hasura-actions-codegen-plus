@@ -1,7 +1,12 @@
 type Mutation {
-  addNumbers (numbers: [Int]): AddResult
+  InsertUserAction(user_info: UserInfo!): TokenOutput
 }
 
-type AddResult {
-  sum: Int
+input UserInfo {
+  username: String!
+  password: String!
+}
+
+type TokenOutput {
+  accessToken: String!
 }
